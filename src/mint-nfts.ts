@@ -33,7 +33,7 @@ async function mintNFT(umi: Umi, id: number, ipfsHash: string) {
     symbol: "$ARIA",
     uri: "https://gateway.pinata.cloud/ipfs/" + ipfsHash,
     sellerFeeBasisPoints: percentAmount(
-      Number.parseFloat(process.env.SELLER_FEE_BASIS_POINTS!)
+      Number.parseFloat(process.env.SALE_ROYALITY_PERCENTAGE!)
     ),
     collection: {
       verified: false,

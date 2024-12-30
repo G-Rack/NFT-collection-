@@ -17,7 +17,7 @@ async function main() {
     symbol: "$ARIA",
     uri: "https://gateway.pinata.cloud/ipfs/bafkreifagppy7ow57f2coht5ayfzx6q2h6a2ixfjrtbvepny6e6cmbnygm",
     sellerFeeBasisPoints: percentAmount(
-      Number.parseFloat(process.env.SELLER_FEE_BASIS_POINTS!)
+      Number.parseFloat(process.env.SALE_ROYALITY_PERCENTAGE!)
     ),
     isCollection: true,
     isMutable: false,
