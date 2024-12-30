@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "node --env-file=.env -r ts-node/register src/index.ts",
     "ipfs:nft_upload": "node --env-file=.env -r ts-node/register src/ipfs-nft_upload.ts",
     "address": "node --env-file=.env -r ts-node/register src/check_wallet_address.ts",
     "mint:collection": "node --env-file=.env -r ts-node/register src/mint-collection.ts",
