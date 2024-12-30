@@ -89,7 +89,7 @@ async function main() {
   }
 
   const umi = await configUmi();
-  const targetNFTID = Number.parseInt(process.env.NFT_MINTING_MAX_ID!);
+  const targetNFTID = Number.parseInt(process.env.NFT_MINTING_MAX_ID! || "10000");
   const merkleTreeAddress = process.env.MERKEL_TREE_ADDRESS;
 
   if (!merkleTreeAddress) {
